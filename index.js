@@ -33,37 +33,37 @@ function add(a, b) {
   
    
           /*Number Three */    
-  let name= prompt("What is your Name?")
+
   
   // Input: name (string)
   // Action: Greet the user by name
   // Output: The greeting (string)
-  function greet(name) {
-  
+  function greet() {
+    let name= prompt("What is your Name?")
  return `Hello, ${name}`;
 
   }
-  greet (name)
-console.log( greet (name))
+  greet ()
+console.log( greet ())
 
 
 
 
           /*Number Four */    
-let age= Number (prompt('How old are you?'))
+
 
   // Input: age (number)
   // Action: Check if the age is 18 or over
   // Output: The result (boolean)
-  function isAnAdult(age) {
-
+  function isAnAdult() {
+    let age= Number (prompt('How old are you?'))
     if (age>18 )
 
  return 'Come in'
  return 'Go to your mama'
     }
-    isAnAdult(age)
-    console.log( isAnAdult(age))
+    isAnAdult()
+    console.log( isAnAdult())
 
   }
   
@@ -84,8 +84,7 @@ let age= Number (prompt('How old are you?'))
 
 
            /*Number Six */    
-  let age= Number (prompt('How old are you?'))
-  let name= prompt("What is your name?")
+  
   
   // Input: person ({ age: number, name: string })
   // Action:
@@ -93,7 +92,10 @@ let age= Number (prompt('How old are you?'))
   //   - if they are, greet them
   //   - if they are not, tell them to come back in X years (when they are)
   // Output: The result (string)
-  function admit(age, name) {
+  function admit() {
+    let age= Number (prompt('How old are you?'))
+    let name= prompt("What is your name?")
+
     let Age = 18-age;
     if (age>18 )
     return `Hello Mr ${name}`
@@ -102,5 +104,5 @@ let age= Number (prompt('How old are you?'))
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
   }
-  admit(age,name)
+  admit()
 
